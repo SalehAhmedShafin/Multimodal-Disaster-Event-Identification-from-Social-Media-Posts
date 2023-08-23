@@ -21,7 +21,7 @@ disaster images and tweets in addition to the Non-damage
 (ND) category<br>
 
 METHODOLOGY: <br>
-![Alt Text](Image URL) <br>
+![Alt Text](Images/methodology.png) <br>
 
 This section presents the proposed methodology of
 multimodal architecture for classifying disasters from social
@@ -81,25 +81,25 @@ in poor performance. By including ”skip connections” or
 residual mappings, ResNet-50 addresses this issue. ResNet-50
 has 50 layers and has shown outstanding results in a variety
 of computer vision applications such as classifying the image,
-detecting objects, and segmentation of images.[36].
-Using a pre-trained DenseNet-201 [18] model substantially
+detecting objects, and segmentation of images. <br>
+Using a pre-trained DenseNet-201 model substantially
 reduces the number of parameters, which means that we can
 save time and resources, and benefit from the learned features
 of the large dataset. It is also a pre-train CNN model with
 consist of 201 layers. The main concept of DenseNet21 is to
 feed-forward connect each layer to every other layer within
 a single dense block. Information from all previous layers
-can now flow straight into the current layer, improving feature propagation. It alleviates the vanishing-gradient problem,
+can now flow straight into the current layer, improving feature propagation. It alleviates the vanishing-gradient problem,
 which means that the network can learn from both shallow and
 deep layers without losing information. This feature enables
 DenseNet models to achieve state-of-the-art performance on
-different computer vision tasks while being more parameterefficient and simpler to train. It is used for classifying the
-image, detecting objects, and segmentation of images. [18].
+different computer vision tasks while being more parameter-efficient and simpler to train. It is used for classifying the
+image, detecting objects, and segmentation of images. <br>
 Lastly, EfficientNetB3 [17] models are designed to achieve
 state-of-the-art accuracy on image classification tasks while
 being smaller and faster than other models. It is also a
 convolutional neural network construction and scaling method.
-To equally modify the depth, breadth, and resolution dimensions, it uses a compound coefficient. Its increased depth,
+To equally modify the depth, breadth, and resolution dimensions, it uses a compound coefficient. Its increased depth,
 width, and resolution enable it to capture more complex
 patterns and features, leading to improved performance on
 challenging visual recognition tasks. When a strong, precise,
@@ -110,18 +110,18 @@ crucial, EfficientNetB3 is used.<br>
 
 Step-4) Textual Feature Extractor: BERT and XLNet are
 used to extract the feature from the Tweets.
-BERT [19] converts words into numbers. BERT means Bidirectional Encoder Representations from Transformers. It is a
+BERT [19] converts words into numbers. BERT means Bidirectional Encoder Representations from Transformers. It is a
 powerful natural language processing (NLP) model. It uses
 transformer-based architecture which operates a Bi-directional
 approach to process and understand the context of words in a
 sentence whereas traditional NLP models process words in a
 unidirectional manner. It involves pre-training on a substantial
-corpus to learn contextual representations, followed by finetuning particular NLP tasks to complete tasks and generate
+corpus to learn contextual representations, followed by fine-tuning particular NLP tasks to complete tasks and generate
 predictions. In our work So, use a pre-train ’bert-base-uncased’
 model This allows the training of machine learning models on
 textual data [37]. The limitations of BERT are solved by the
-generalized autoregressive pretraining technique XLNet [? ],
-which maximized the predicted probability over all permutations of the factorization order. It builds on the TransformerXL architecture and follows a Bi-directional approach. It uses
+generalized autoregressive pretraining technique XLNet,
+which maximized the predicted probability over all permutations of the factorization order. It builds on the TransformerXL architecture and follows a Bi-directional approach. It uses
 permutation sampling to generate potential permutations of
 the input tokens and maintains an autoregressive property
 throughout pre-training, modeling the probability distribution
@@ -129,7 +129,7 @@ of a sequence by taking each token into account one at a time.
 This makes it possible for XLNet to efficiently capture token
 dependencies.<br>
 
-Step-5) Choosing Best Performed CNN model: We compile
+Step-5) Choosing Best-performed CNN model: We compile
 a list of models to run for our visual tasks. Then, we execute
 all of the visual models with the identical hyperparameter
 configuration and save the training and validation event history.
