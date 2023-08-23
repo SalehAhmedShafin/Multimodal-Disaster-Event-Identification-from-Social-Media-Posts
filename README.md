@@ -121,7 +121,7 @@ predictions. In our work So, use a pre-train ’bert-base-uncased’
 model This allows the training of machine learning models on
 textual data [37]. The limitations of BERT are solved by the
 generalized autoregressive pretraining technique XLNet,
-which maximized the predicted probability over all permutations of the factorization order. It builds on the TransformerXL architecture and follows a Bi-directional approach. It uses
+which maximized the predicted probability over all permutations of the factorization order. It builds on the Transformer XL architecture and follows a Bi-directional approach. It uses
 permutation sampling to generate potential permutations of
 the input tokens and maintains an autoregressive property
 throughout pre-training, modeling the probability distribution
@@ -145,7 +145,7 @@ batch size We also use early stop criteria in the time of training to avoid
 overfit. So, from all visual models, EfficientNetB3 performs
 better than others.<br>
 
-Step-6) Selecting Best Performed Language Model: Individual best-performing model is chosen from the previous
+Step-6) Selecting Best Performed Language Model: The individual best-performing model is chosen from the previous
 step which is exactly the same procedure that is applied for
 selecting the visual model. In this step, Bert is selected and
 sent to the next step named Fusion and Classification.<br>
